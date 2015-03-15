@@ -1,4 +1,3 @@
-
 # Spatial Data Analysis with PySAL
 
 **[Sergio Rey][Rey]**
@@ -30,7 +29,7 @@ This tutorial will cover the following aspects of spatial data analysis
 
 For the workshop we will require the following packages be installed
 
-- PySAL 1.1.1
+- PySAL 1.9.1
 - SciPy
 - Numpy
 - iPython Notebook 2.1+
