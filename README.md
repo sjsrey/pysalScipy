@@ -6,7 +6,7 @@
 
 ## Tutorial Description
 
-[PySAL][pysal] is a modular library with supports a wide variety of methods of spatial analysis. In this tutorial we will provide an introduction to a selection of these modules to show users how they can be used to analyze their spatial data. The focus is on [1] the processing of different common vector formats for geospatial data; [2] the visualization and mapping of that data; and [3] the application of methods of exploratory spatial data analysis. Along the way we also demonstrate the use of PySAL with other packages in the Python scientific stack including matplotlib and folium, as well as how PySAL can be used with cartodb and the open source geographic information system QGIS. Concepts will be illustrated through a series of IPython notebooks and participants will have the opportunity to carry out several hands-on exercises.
+[PySAL][pysal] is a modular library with supports a wide variety of methods of spatial analysis. In this tutorial we will provide an introduction to a selection of these modules to show users how they can be used to analyze their spatial data. The focus is on: [1] the processing of different common vector formats for geospatial data; [2] the visualization and mapping of that data; and [3] the application of methods of exploratory spatial data analysis. Along the way we also demonstrate the use of PySAL with other packages in the Python scientific stack including [matplotlib][mpl], [cartopy][cartopy], and folium, as well as how PySAL can be used with and the open source geographic information system [QGIS][anita]. Concepts will be illustrated through a series of IPython notebooks and participants will have the opportunity to carry out several hands-on exercises.
 
 ## Outline
 
@@ -25,15 +25,14 @@
 	- Choropleth mapping concepts
 	- PySAL visualization module with matplotlib
 	- PySAL + folium
-	- PySAL + cartodb
+	- PySAL + cartopy
 
 - 1:30-2:00 Exercise 2: Choropleth mapping
 
 - 2:00-2:30 Introduction to spatial autocorrelation analysis
 	- Spatial Weights
-	- Global Moran's I theory
+	- Global Moran's I
 	- Hypothesis Tests
-	- Visualization
 	- PySAL + QGIS
 
 - 2:30-3:00 Exercise 3: Global autocorrelation analysis
@@ -77,7 +76,7 @@ There are a number of ways to install PySAL and these dependencies. For the work
 3. `pip install -U folium`
 
 #### PySAL via Enthought Canopy
-Note that the Academic version of Canopy comes with PySAL version 1.7. For this workshop we will be using PySAL 1.8. Upgrading in Canopy can be done as follows:
+Note that the Academic version of Canopy comes with PySAL version 1.7. For this workshop we will be using PySAL 1.9.1. Upgrading in Canopy can be done as follows:
 
 1. Install [Canopy][Canopy]
 2. Run Canopy
@@ -137,7 +136,9 @@ Your screen should look something like:
 
 If you run into any problems, double check that you have installed both the upgraded version of PySAL and folium (see above). If problems persist, please contact me <sjsrey@gmail.com>.
 
-
+[anita]: https://twitter.com/underdarkgis/status/488788614172901376
+[cartopy]: http://nbviewer.ipython.org/gist/darribas/9a0d3b6177b7ca6be007/london_boroughs.ipynb
+[mpl]:  http://nbviewer.ipython.org/gist/darribas/3890284
 [pysal]: http://pysal.org
 [Anaconda]: http://continuum.io/downloads.html
 [Canopy]: https://www.enthought.com/store
