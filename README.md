@@ -6,11 +6,11 @@
 
 ## Tutorial Description
 
-[PySAL][pysal] is a modular library with supports a wide variety of methods of spatial analysis. In this tutorial we will provide an introduction to a selection of these modules to show users how they can be used to analyze their spatial data. The focus is on: [1] the processing of different common vector formats for geospatial data; [2] the visualization and mapping of that data; and [3] the application of methods of exploratory spatial data analysis. Along the way we also demonstrate the use of PySAL with other packages in the Python scientific stack including [matplotlib][mpl], [cartopy][cartopy], and folium, as well as how PySAL can be used with and the open source geographic information system [QGIS][anita]. Concepts will be illustrated through a series of IPython notebooks and participants will have the opportunity to carry out several hands-on exercises.
+[PySAL][pysal] is a modular library that supports a wide variety of spatial analysis methods. In this tutorial we will provide an introduction to a selection of these modules and  show users the methods can be used to analyze their spatial data. The focus is on: [1] the processing of different common vector formats for geospatial data; [2] the visualization and mapping of that data; and [3] the application of methods of exploratory spatial data analysis. Along the way we also demonstrate the use of PySAL with other packages in the Python scientific stack including [matplotlib][mpl], [cartopy][cartopy], and [folium][folium], as well as how PySAL can be used with the open source geographic information system [QGIS][anita]. Concepts will be illustrated through a series of IPython notebooks and participants will have the opportunity to carry out several hands-on exercises.
 
 ## Outline
 
-- 0:00-0:15 Introduction and Setup
+- 0:00-0:15 Introduction and setup
 	- PySAL Overview
 	- Ensure all participants have require packages installed along with datasets and notebooks for the tutorials and exercise
 
@@ -65,6 +65,7 @@ For the workshop we will require the following packages be installed
 - Numpy
 - iPython Notebook 2.1+
 - folium
+- [QGIS][qgisdl]
 
 There are a number of ways to install PySAL and these dependencies. For the workshop, if you do not yet have the dependencies installed we suggest using one of two scientific Python distributions (below). These have the advantages of including most of the dependencies for PySAL as well as PySAL itself. Moreover, both allow for updating PySAL to the most recent release  (1.9.1 released January 31, 2015) which is more current that what is listed in either distribution. Both of these distributions also allow for installation of our final dependency, folium.
 
@@ -138,8 +139,10 @@ If you run into any problems, double check that you have installed both the upgr
 
 [anita]: https://twitter.com/underdarkgis/status/488788614172901376
 [cartopy]: http://nbviewer.ipython.org/gist/darribas/9a0d3b6177b7ca6be007/london_boroughs.ipynb
+[folium]: https://gist.github.com/sjsrey/6802208 
 [mpl]:  http://nbviewer.ipython.org/gist/darribas/3890284
 [pysal]: http://pysal.org
+[qgisdl]: http://www2.qgis.org/en/site/forusers/download.html
 [Anaconda]: http://continuum.io/downloads.html
 [Canopy]: https://www.enthought.com/store
 [Rey]: https://geoplan.asu.edu/people/sergio-j-rey
