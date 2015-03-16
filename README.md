@@ -6,7 +6,7 @@
 
 ## Tutorial Description
 
-PySAL is a modular library with supports a wide variety of methods of spatial analysis. In this tutorial we will provide an introduction to a selection of these modules to show users how they can be used to analyze their spatial data. The focus is on [1] the processing of different common vector formats for geospatial data; [2] the visualization and mapping of that data; and [3] the application of methods of exploratory spatial data analysis. Along the way we also demonstrate the use of PySAL with other packages in the Python scientific stack including matplotlib and folium, as well as how PySAL can be used with cartodb and the open source geographic information system QGIS. Concepts will be illustrated through a series of IPython notebooks and participants will have the opportunity to carry out several exercises on their own.
+[PySAL][pysal] is a modular library with supports a wide variety of methods of spatial analysis. In this tutorial we will provide an introduction to a selection of these modules to show users how they can be used to analyze their spatial data. The focus is on [1] the processing of different common vector formats for geospatial data; [2] the visualization and mapping of that data; and [3] the application of methods of exploratory spatial data analysis. Along the way we also demonstrate the use of PySAL with other packages in the Python scientific stack including matplotlib and folium, as well as how PySAL can be used with cartodb and the open source geographic information system QGIS. Concepts will be illustrated through a series of IPython notebooks and participants will have the opportunity to carry out several hands-on exercises.
 
 ## Outline
 
@@ -138,7 +138,7 @@ Your screen should look something like:
 If you run into any problems, double check that you have installed both the upgraded version of PySAL and folium (see above). If problems persist, please contact me <sjsrey@gmail.com>.
 
 
-[PySAL]: http://pysal.org
+[pysal]: http://pysal.org
 [Anaconda]: http://continuum.io/downloads.html
 [Canopy]: https://www.enthought.com/store
 [Rey]: https://geoplan.asu.edu/people/sergio-j-rey
