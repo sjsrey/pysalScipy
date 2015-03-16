@@ -1,24 +1,56 @@
 
-# Spatial Data Analysis with PySAL
-
-**[Sergio Rey][Rey]**
+# Spatial Data Analysis with PySAL -- Sergio Rey
 
 
-
-**SciPy 2015, Austin, Texas**
+## Bio
+[Sergio Rey][Rey] is professor of geographical sciences and core faculty member of the GeoDa Center for Geospatial Analysis and Computation at the Arizona State University. His research interests include open science, spatial and spatio-temporal data analysis, spatial econometrics, visualization, high performance geocomputation, spatial inequality dynamics, integrated multiregional modeling, and regional science. He co-founded the Python Spatial Analysis Library (PySAL) in 2007 and continues to direct the PySAL project.  Rey is a fellow of the spatial econometrics association and editor of the journal Geographical Analysis.
 
 ## Tutorial Description
 
-A unique feature of this tutorial is the use of Python based software tools for spatial data analysis. Python is an object oriented scripting language that is gaining rapid adoption in the scientific computing and data science communities. To facilitate its adoption within the GIScience community, project founders Rey and Anselin have collaborated on the creation of [PySAL]: Python Library for Spatial Analysis. Since its initial release in July 2010, PySAL has been downloaded over 50,000 times and is now included in well- known open source scientific data analysis distributions, such as Anaconda. This tutorial will introduce participants to the latest version of PySAL (1.9.1).
+PySAL is a modular library with supports a wide variety of methods of spatial analysis. In this tutorial we will provide an introduction to a selection of these modules to show users how they can be used to analyze their spatial data. The focus is on [1] the processing of different common vector formats for geospatial data; [2] the visualization and mapping of that data; and [3] the application of methods of exploratory spatial data analysis. Along the way we also demonstrate the use of PySAL with other packages in the Python scientific stack including matplotlib and folium, as well as how PySAL can be used with cartodb and the open source geographic information system QGIS. Concepts will be illustrated through a series of IPython notebooks and participants will have the opportunity to carry out several exercises on their own.
 
-This tutorial will cover the following aspects of spatial data analysis
+## Outline
 
-- Reading different sources of vector based spatial data
-- Visualization and mapping using PySAL with folium, CartoDB, and related packages
-- Construction and manipulation of spatial weights
-- Testing for spatial clustering using global spatial autocorrelation statistics
-- Identification of hot and cold spots using local spatial autocorrelation statistics
-- Exploratory space-time data analysis with PySAL 
+- 0:00-0:15 Introduction and Setup
+	- PySAL Overview
+	- Ensure all participants have require packages installed along with datasets and notebooks for the tutorials and exercise
+
+- 0:15-0:45 Processing spatial data
+	- Introduction to common vector based spatial data formats
+	- Reading shapefiles, geojson and other data formats
+	- Geoprocessing
+
+- 0:45-1:00 Exercise 1: Spatial data processing
+
+- 1:00-1:30 Mapping and geovisualization
+	- Choropleth mapping concepts
+	- PySAL visualization module with matplotlib
+	- PySAL + folium
+	- PySAL + cartodb
+
+- 1:30-2:00 Exercise 2: Choropleth mapping
+
+- 2:00-2:30 Introduction to spatial autocorrelation analysis
+	- Spatial Weights
+	- Global Moran's I theory
+	- Hypothesis Tests
+	- Visualization
+	- PySAL + QGIS
+
+- 2:30-3:00 Exercise 3: Global autocorrelation analysis
+
+- 3:00-3:30 Spatial cluster detection
+	- Local Indicators of Spatial Association
+	- Hot and cold spot detection
+	- Visualization
+	- PySAL + QGIS
+
+- 3:30-3:50 Exercise 4: Local autocorrelation analysis
+
+- 3:50-4:00 Conclusion
+	- Summary
+	- Next Steps with PySAL
+
 
 ## Prerequisites
 
@@ -30,7 +62,7 @@ This tutorial will cover the following aspects of spatial data analysis
 
 For the workshop we will require the following packages be installed
 
-- PySAL 1.1.1
+- PySAL 1.9.1
 - SciPy
 - Numpy
 - iPython Notebook 2.1+
