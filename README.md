@@ -1,4 +1,3 @@
-
 # Spatial Data Analysis with PySAL -- Sergio Rey
 
 
@@ -140,11 +139,10 @@ If you run into any problems, double check that you have installed both the upgr
 
 
 [PySAL]: http://pysal.org
-[GeoDaSpace]: https://geodacenter.asu.edu/software/downloads/geodaspace
 [Anaconda]: http://continuum.io/downloads.html
 [Canopy]: https://www.enthought.com/store
+[Rey]: https://geoplan.asu.edu/people/sergio-j-rey
 [VirtualBox]: https://www.virtualbox.org/wiki/Downloads
 [VirtualBox 4.3.12]: http://download.virtualbox.org/virtualbox/4.3.12/VirtualBox-4.3.12-93733-Win.exe
 [Vagrant]: http://www.vagrantup.com/downloads.html
 [Vagrantfile]: Vagrantfile
-[Rey]: https://geoplan.asu.edu/people/sergio-j-rey
