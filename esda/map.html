@@ -64,8 +64,8 @@
 
           
           var color = d3.scale.threshold()
-              .domain([0, 1])
-              .range(['#FFFFCC', '#C7E9B4', '#7FCDBB']);
+              .domain([4.79505923454, 7.850244237499999, 10.916782187, 15.033387458799998])
+              .range(['#FFFFCC', '#C7E9B4', '#7FCDBB', '#41B6C4', '#1D91C0']);
           
 
           var map = L.map('map').setView([33.755, -87.39], 5);
@@ -107,14 +107,14 @@
     legend.addTo(map);
 
     var x = d3.scale.linear()
-    .domain([0, 1])
+    .domain([0, 16])
     .range([0, 400]);
 
     var xAxis = d3.svg.axis()
         .scale(x)
         .orient("top")
         .tickSize(1)
-        .tickValues([0, 1]);
+        .tickValues([4.79505923454, 7.850244237499999, 10.916782187, 15.033387458799998]);
 
     var svg = d3.select(".legend.leaflet-control").append("svg")
         .attr("id", 'legend')
@@ -142,7 +142,7 @@
     g.call(xAxis).append("text")
         .attr("class", "caption")
         .attr("y", 21)
-        .text('Homicide Rate HR80 - Cold Spots (0.01)');
+        .text('Spatially Random Homicide Rate HR80 (Quantiles k=5)');
           
 
       };

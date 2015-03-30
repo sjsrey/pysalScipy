@@ -63,7 +63,7 @@ For the workshop we will require the following packages be installed
 - PySAL 1.9.1
 - SciPy
 - Numpy
-- iPython Notebook 2.1+
+- iPython Notebook 3.0+
 - folium
 - [QGIS][qgisdl]
 
@@ -75,6 +75,8 @@ There are a number of ways to install PySAL and these dependencies. For the work
 2. Open a terminal (Mac or Linux) or Powershell (Windows)
 2. `pip install -U pysal`
 3. `pip install -U folium`
+4. conda update ipython ipython-notebook ipython-qtconsole
+
 
 #### PySAL via Enthought Canopy
 Note that the Academic version of Canopy comes with PySAL version 1.7. For this workshop we will be using PySAL 1.9.1. Upgrading in Canopy can be done as follows:
@@ -84,6 +86,7 @@ Note that the Academic version of Canopy comes with PySAL version 1.7. For this 
 3. From the menu select `Tools Canopy Terminal`
 4. `pip install -U pysal`
 5. `pip install -U folium`
+6. enpkg ipython
 
 
 
