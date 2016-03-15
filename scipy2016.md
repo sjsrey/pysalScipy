@@ -10,8 +10,10 @@ undestanding cities as well as in the quantitative and computational methods req
 to leverage the power of the 
 large amount of urban data increasingly becoming available. He is also part of the team
 of core developers of PySAL, the open-source library written in Python for spatial
-analysis, and has designed and developed several workshops at different levels on Geographic
-Data Science, Python and open data.
+analysis. Dani regularly teaches Geographic Data Science and Python courses at the 
+University of Liverpool and has designed and developed several workshops at different
+levels on spatial analysis and econometrics, Python and open source scientific
+computing.
 
 ## Prerequisite skills
 
