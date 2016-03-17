@@ -2,7 +2,7 @@
 
 ## Bio
 
-[Sergio Rey][http://sergerey.org/] is professor of geographical sciences and core faculty member of the GeoDa Center for Geospatial Analysis and Computation at the Arizona State University. His research interests include open science, spatial and spatio-temporal data analysis, spatial econometrics, visualization, high performance geocomputation, spatial inequality dynamics, integrated multiregional modeling, and regional science. He co-founded the Python Spatial Analysis Library (PySAL) in 2007 and continues to direct the PySAL project.  Rey is a fellow of the spatial econometrics association and editor of the journal Geographical Analysis.
+[Sergio Rey](http://sergerey.org/) is professor of geographical sciences and core faculty member of the GeoDa Center for Geospatial Analysis and Computation at the Arizona State University. His research interests include open science, spatial and spatio-temporal data analysis, spatial econometrics, visualization, high performance geocomputation, spatial inequality dynamics, integrated multiregional modeling, and regional science. He co-founded the Python Spatial Analysis Library (PySAL) in 2007 and continues to direct the PySAL project.  Rey is a fellow of the spatial econometrics association and editor of the journal Geographical Analysis.
 
 [Dani Arribas-Bel](http://darribas.org) is Lecturer in Geographic Data Science and member of
 the Geographic Data Science Lab at the University of Liverpool (UK). Dani is interested in 
