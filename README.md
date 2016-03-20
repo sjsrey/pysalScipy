@@ -1,155 +1,131 @@
-# Spatial Data Analysis with PySAL -- Sergio Rey
-
+# Geographic Data Science with PySAL and the pydata stack
 
 ## Bio
-[Sergio Rey][Rey] is professor of geographical sciences and core faculty member of the GeoDa Center for Geospatial Analysis and Computation at the Arizona State University. His research interests include open science, spatial and spatio-temporal data analysis, spatial econometrics, visualization, high performance geocomputation, spatial inequality dynamics, integrated multiregional modeling, and regional science. He co-founded the Python Spatial Analysis Library (PySAL) in 2007 and continues to direct the PySAL project.  Rey is a fellow of the spatial econometrics association and editor of the journal Geographical Analysis.
 
-## Tutorial Description
+[Sergio Rey](http://sergerey.org/) is professor of geographical sciences and core faculty member of the GeoDa Center for Geospatial Analysis and Computation at the Arizona State University. His research interests include open science, spatial and spatio-temporal data analysis, spatial econometrics, visualization, high performance geocomputation, spatial inequality dynamics, integrated multiregional modeling, and regional science. He co-founded the Python Spatial Analysis Library (PySAL) in 2007 and continues to direct the PySAL project.  Rey is a fellow of the spatial econometrics association and editor of the journal Geographical Analysis.
 
-[PySAL][pysal] is a modular library that supports a wide variety of spatial analysis methods. In this tutorial we will provide an introduction to a selection of these modules and  show users the methods can be used to analyze their spatial data. The focus is on: [1] the processing of different common vector formats for geospatial data; [2] the visualization and mapping of that data; and [3] the application of methods of exploratory spatial data analysis. Along the way we also demonstrate the use of PySAL with other packages in the Python scientific stack including [matplotlib][mpl], [cartopy][cartopy], and [folium][folium], as well as how PySAL can be used with the open source geographic information system [QGIS][anita]. Concepts will be illustrated through a series of IPython notebooks and participants will have the opportunity to carry out several hands-on exercises.
+[Dani Arribas-Bel](http://darribas.org) is Lecturer in Geographic Data Science and member of
+the Geographic Data Science Lab at the University of Liverpool (UK). Dani is interested in 
+undestanding cities as well as in the quantitative and computational methods required 
+to leverage the power of the 
+large amount of urban data increasingly becoming available. He is also part of the team
+of core developers of PySAL, the open-source library written in Python for spatial
+analysis. Dani regularly teaches Geographic Data Science and Python courses at the 
+University of Liverpool and has designed and developed several workshops at different
+levels on spatial analysis and econometrics, Python and open source scientific
+computing.
 
-## Outline
+## Prerequisite skills
 
-- 0:00-0:15 Introduction and setup
-	- PySAL Overview
-	- Ensure all participants have require packages installed along with datasets and notebooks for the tutorials and exercise
+The workshop is based on a courses taught to Geography undergraduates with no
+previous programming experience, but compressed into the appropriate length. Some statistical
+background and familiarity with Python are recommended to follow along comfortably, but
+there is no requirement to be knowledgeable in the Python geospatial stack.
 
-- 0:15-0:45 Processing spatial data
-	- Introduction to common vector based spatial data formats
-	- Reading shapefiles, geojson and other data formats
-	- Geoprocessing
+## Description of the tutorial
 
-- 0:45-1:00 Exercise 1: Spatial data processing
+This two-part tutorial will first provide participants with a gentle
+introduction to Python for geospatial analysis, and an introduction to version
+PySAL 1.11 and the related eco-system of libraries to facilitate common tasks
+for Geographic Data Scientists. 
+The
+first part will cover munging geo-data and exploring relations over space.
+This includes
+importing data in different formats (e.g. shapefile, GeoJSON), visualizing,
+combining and tidying them up for analysis, and will use libraries such as `pandas`,
+`geopandas`, `PySAL`, or `rasterio`. The second part will provide a gentle
+overview to demonstrate several techniques that allow to extract geospatial
+insight from the data. This includes spatial clustering and regression and point 
+pattern analysis, and will use libraries such as `PySAL`, `scikit-learn`,
+or `clusterpy`. A particular emphasis will be set on presenting concepts
+through visualization, for which libraries such as `matplotlib`, `seaborn`,
+and `folium` will be used.
 
-- 1:00-1:30 Mapping and geovisualization
-	- Choropleth mapping concepts
-	- PySAL visualization module with matplotlib
-	- PySAL + folium
-	- PySAL + cartopy
+## Detailed outline
 
-- 1:30-2:00 Exercise 2: Choropleth mapping
+### Part I
 
-- 2:00-2:30 Introduction to spatial autocorrelation analysis
-	- Spatial Weights
-	- Global Moran's I
-	- Hypothesis Tests
-	- PySAL + QGIS
+1. Software and Tools Installation (10 min)
 
-- 2:30-3:00 Exercise 3: Global autocorrelation analysis
+2. Spatial data processing with PySAL (45 min)
 
-- 3:00-3:30 Spatial cluster detection
-	- Local Indicators of Spatial Association
-	- Hot and cold spot detection
-	- Visualization
-	- PySAL + QGIS
+    a. Input-output
 
-- 3:30-3:50 Exercise 4: Local autocorrelation analysis
+    b. Visualization and Mapping
 
-- 3:50-4:00 Conclusion
-	- Summary
-	- Next Steps with PySAL
+    c. Spatial weights
 
+3. Exercise (10 min.)
 
-## Prerequisites
+4. ESDA with PySAL (45 min)
 
-- Previous experience with Python programming is recommended
-- Participants should bring their own laptops to the workshop
-- Software should be installed prior to traveling to the workshop (instructions below)
+    a. Global Autocorrelation
 
-### Software Requirements
+    b. Local Autocorrelation
 
-For the workshop we will require the following packages be installed
+    c. Space-Time exploratory analysis
 
-- PySAL 1.9.1
-- SciPy
-- Numpy
-- iPython Notebook 3.0+
-- folium
-- [QGIS][qgisdl]
+5. Exercise (10 min)
 
-There are a number of ways to install PySAL and these dependencies. For the workshop, if you do not yet have the dependencies installed we suggest using one of two scientific Python distributions (below). These have the advantages of including most of the dependencies for PySAL as well as PySAL itself. Moreover, both allow for updating PySAL to the most recent release  (1.9.1 released January 31, 2015) which is more current that what is listed in either distribution. Both of these distributions also allow for installation of our final dependency, folium.
+### Part II
 
-#### PySAL via Anaconda Python Distribution
+1. Spatial clustering a (30 min)
 
-1. Install [Anaconda Python Distribution Version 1.8.0][Anaconda]
-2. Open a terminal (Mac or Linux) or Powershell (Windows)
-2. `pip install -U pysal`
-3. `pip install -U folium`
-4. conda update ipython ipython-notebook ipython-qtconsole
+    a. Geodemographic analysis
 
+    b. Regionalization
 
-#### PySAL via Enthought Canopy
-Note that the Academic version of Canopy comes with PySAL version 1.7. For this workshop we will be using PySAL 1.9.1. Upgrading in Canopy can be done as follows:
+2. Exercise (10 min)
 
-1. Install [Canopy][Canopy]
-2. Run Canopy
-3. From the menu select `Tools Canopy Terminal`
-4. `pip install -U pysal`
-5. `pip install -U folium`
-6. enpkg ipython
+3.  Spatial Regression (30 min)
 
+    a.  Overview
 
+    c.  Basic spatial regression: spatial lag and error model
 
-#### Testing Your Installation
+4. Exercise (30 min)
 
-Once you have installed all the dependencies, you can check to confirm everything is ready to go.
+5. Point Patterns (30 min)
 
-For Anaconda:
-
-1. Open a terminal (Mac or Linux) or Powershell (Windows)
-2. `ipython notebook`
-3. In the browser click `New Notebook`
-3. In the first cell in the notebook enter  
-   `import pysal`
-
-   `pysal.version`
-   
-   Then `<Shift-Enter>` (i.e., hit the Shift then the Enter Key)
-4. In the second cell in the notebook enter  
-   `import folium`
-
-   Then `<Shift-Enter>`
+   a. Kernel Density Estimation visualization
  
-Your screen should look something like:
-![Anaconda setup](esda/figures/anaconda.png)
+   b. Centrography and distance based statistics
 
+6. Exercise (10 min)
 
-For Enthought Canopy:
+## Installation materials
 
-2. Run Canopy
-3. From the menu select `Tools Canopy Terminal`
-2. `ipython notebook`
-3. In the browser click `New Notebook`
-3. In the first cell in the notebook enter  
-   `import pysal`
+Participants should have installed the following dependencies:
 
-   `pysal.version`
-   
-   Then `<Shift-Enter>` (i.e., hit the Shift then the Enter Key)
-4. In the second cell in the notebook enter  
-   `import folium`
+* [Anaconda](https://www.continuum.io/downloads) or
+  [MiniConda](http://conda.pydata.org/miniconda.html) Python distributions for
+  Python 2.7. See installation instructions on the links.
+* `git`
+* A `conda` environment loaded with all the dependencies can be installed by
+  running the `pydata.sh` script available as part of the `envs` repository
+  ([Github link](https://github.com/darribas/envs)). To install it, follow
+  these instructions:
+    
+    - Clone the repository on your machine: 
+    
+    `> git clone https://github.com/darribas/envs.git`
 
-   Then `<Shift-Enter>`
- 
+    - Navigate into the folder:
 
-Your screen should look something like:
-![Enthought setup](esda/figures/enthought.png)
+    `> cd envs`
 
+    - Run the script:
 
-#### Issues
+    `> bash pydata.sh`
 
-If you run into any problems, double check that you have installed both the upgraded version of PySAL and folium (see above). If problems persist, please contact me <sjsrey@gmail.com>.
+## Background materials
 
-[anita]: https://twitter.com/underdarkgis/status/488788614172901376
-[cartopy]: http://nbviewer.ipython.org/gist/darribas/9a0d3b6177b7ca6be007/london_boroughs.ipynb
-[folium]: https://gist.github.com/sjsrey/6802208 
-[mpl]:  http://nbviewer.ipython.org/gist/darribas/3890284
-[pysal]: http://pysal.org
-[qgisdl]: http://www2.qgis.org/en/site/forusers/download.html
-[Anaconda]: http://continuum.io/downloads.html
-[Canopy]: https://www.enthought.com/store
-[Rey]: https://geoplan.asu.edu/people/sergio-j-rey
-[VirtualBox]: https://www.virtualbox.org/wiki/Downloads
-[VirtualBox 4.3.12]: http://download.virtualbox.org/virtualbox/4.3.12/VirtualBox-4.3.12-93733-Win.exe
-[Vagrant]: http://www.vagrantup.com/downloads.html
-[Vagrantfile]: Vagrantfile
+An extensive collection of noteboks and slides related to this tutorial may be
+found in the following url's:
+
+* [PySAL notebooks](https://github.com/pysal/notebooks)
+* [Geographic Data Science course](http://darribas.org/gds15/) at the
+  University of Liverpool.
+* [Geographic Information Analysis course](http://sjsrey.github.io/giasp16/)
+  at Arizona State University
+
